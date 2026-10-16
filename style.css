@@ -1,0 +1,22 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #202d3b; background: #f6f7f9; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.75; }
+header, main, footer { max-width: 880px; margin: auto; padding: 24px 28px; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 20px; border-bottom: 1px solid #dce2e8; }
+a { color: #185a84; text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:hover { color: #103c58; }
+a:focus-visible { outline: 3px solid #b56a08; outline-offset: 4px; }
+.brand { font-size: 1.05rem; font-weight: 750; text-decoration: none; color: #202d3b; }
+nav { display: flex; gap: 20px; flex-wrap: wrap; }
+nav a { font-size: .95rem; }
+nav a[aria-current="page"] { font-weight: 700; }
+main { padding-top: 48px; padding-bottom: 48px; }
+h1 { font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.12; letter-spacing: -.035em; margin: 12px 0 24px; }
+h2 { font-size: 1.25rem; line-height: 1.35; margin-top: 34px; }
+p { margin: 12px 0; }
+.eyebrow { color: #516275; font-size: .86rem; font-weight: 650; letter-spacing: .025em; }
+.lead { font-size: 1.12rem; color: #455469; }
+li { margin: 10px 0; }
+code { overflow-wrap: anywhere; font-size: .95em; }
+footer { border-top: 1px solid #dce2e8; color: #516275; font-size: .85rem; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+@media (max-width: 540px) { header { align-items: flex-start; flex-direction: column; gap: 8px; } header, main, footer { padding-left: 20px; padding-right: 20px; } main { padding-top: 30px; } ul { padding-left: 22px; } }
